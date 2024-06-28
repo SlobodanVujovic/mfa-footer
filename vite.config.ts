@@ -10,7 +10,7 @@ export default defineConfig({
       name: 'remoteFooter',
       filename: 'remoteFooter.js',
       exposes: {
-        './RemoteFooter': './src/App.tsx',
+        './RemoteFooter': './src/Footer.tsx',
       },
       shared: ['react', 'react-dom'],
     }),
