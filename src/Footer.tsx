@@ -12,10 +12,10 @@ function Footer() {
       <div>Remote footer</div>
       <div>
         <a href='https://vitejs.dev' target='_blank'>
-          {/* Mora se navest URL na kome ce se ova remote componenta nalaziti jer ce u suprotnom host aplikacija koriti svoj URL i onda ne moze da nadje resurse na definisanom path-u. */}
+          {/* We must define URL, where this component will eventually be available at, otherwise, host application will use it's own URL and it will not be able to find resources at defined path. */}
           <img src={`${import.meta.env.VITE_ASSETS_BASE_URL}${viteLogo}`} className='logo' alt='Vite logo' />
         </a>
-        {/* Mora se navest URL na kome ce se ova remote componenta nalaziti jer ce u suprotnom host aplikacija koriti svoj URL i onda ne moze da nadje resurse na definisanom path-u. */}
+        {/* We must define URL, where this component will eventually be available at, otherwise, host application will use it's own URL and it will not be able to find resources at defined path. */}
         <a href='https://react.dev' target='_blank'>
           <img src={`${import.meta.env.VITE_ASSETS_BASE_URL}${reactLogo}`} className='logo react' alt='React logo' />
         </a>
