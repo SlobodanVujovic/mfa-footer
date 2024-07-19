@@ -9,7 +9,7 @@ function Footer() {
 
   return (
     <>
-      <div>Remote footer</div>
+      <div style={{ color: 'black' }}>Remote footer</div>
       <div>
         <a href='https://vitejs.dev' target='_blank'>
           {/* We must define URL, where this component will eventually be available at, otherwise, host application will use it's own URL and it will not be able to find resources at defined path. */}
@@ -20,7 +20,7 @@ function Footer() {
           <img src={`${import.meta.env.VITE_ASSETS_BASE_URL}${reactLogo}`} className='logo react' alt='React logo' />
         </a>
       </div>
-      <p>Vite + React</p>
+      <p style={{ color: 'black' }}>Vite + React</p>
 
       <div className='card'>
         <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
